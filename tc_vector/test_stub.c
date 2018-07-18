@@ -5,11 +5,8 @@
 
 void EleDestruct(void* p)
 {
-    if (p)
-    {
-        FREE(p);
-        p   = NULL;
-    }
+    if (p) FREE(p);
+    return;
 
 }
 int main (int argc, char** argv)
